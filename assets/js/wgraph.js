@@ -13,6 +13,8 @@ function makeGraphs(error, causeData) {
     gender_activites(ndx);
     family_support(ndx);
     school_support(ndx);
+    daily_alco(ndx);
+    wend_alco(ndx);
 
      //console.log(causeData);
      dc.renderAll();
@@ -122,4 +124,43 @@ function school_support(ndx){
         .transitionDuration(1500)
         .dimension(dim)
         .group(group);
+}
+
+//Bargraphs for Alcohol Consumption
+//Weekday Consumption
+function daily_alco(ndx) {
+    var dim = ndx.dimension(dc.pluck('Dalc'));
+    var group = dim.group();
+    
+    dc.barChart("#dailyalc")
+        .width(620)
+        .height(350)
+        .margins({top: 10, right: 50, bottom: 30, left: 50})
+        .dimension(dim)
+        .group(group)
+        .transitionDuration(500)
+        .x(d3.scale.ordinal())
+        .xUnits(dc.units.ordinal)
+        .elasticY(true)
+        .xAxisLabel("Students that Drink During Week Days")
+        .yAxis().ticks(20);
+}
+
+//Weekend Consumption
+function wend_alco(ndx) {
+    var dim = ndx.dimension(dc.pluck('Walc'));
+    var group = dim.group();
+    
+    dc.barChart("#wendalc")
+        .width(620)
+        .height(350)
+        .margins({top: 10, right: 50, bottom: 30, left: 50})
+        .dimension(dim)
+        .group(group)
+        .transitionDuration(500)
+        .x(d3.scale.ordinal())
+        .xUnits(dc.units.ordinal)
+        .elasticY(true)
+        .xAxisLabel("Students that Drink During Weekends")
+        .yAxis().ticks(20);
 }
