@@ -12,6 +12,10 @@ The Dashboard is designed to be easy to view with great Typography and Consistan
 
 It was designed to allow the user to quickly get results for questions asked of the data.  
 
+Wireframe Image -  ../blob/master/uxd/wireframemile2.jpg  
+
+UDX documentation is Available in UDX Folder ../blob/master/uxd  
+
 
 ## Features
 
@@ -60,7 +64,7 @@ To Test this Project locally I used Fenix webserver installed on my development 
 
 I used Developer tools to Console.log data to the Chrome Console for debugging data as I was building graphs this allowed to change data in the DOM. I also used the device toolbar to view across devices even though D3 and DC dose not render responsive graphs and the site was designed to be viewed purely on large screen devices.    
 
-I selected a range of different values across the graphs on the dashboard to check that all graphs were redendering correctly and also updating as required. I also cross referenced with the CSV file through the chrome console.    
+I selected a range of different values across the graphs on the dashboard to check that all graphs were redendering correctly and also updating as required.   
 
 I tested my code with W3C Markup and CSS Validator to Check compliance. 
 
