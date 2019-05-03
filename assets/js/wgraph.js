@@ -15,6 +15,7 @@ function makeGraphs(error, causeData) {
     school_support(ndx);
     daily_alco(ndx);
     wend_alco(ndx);
+    show_grades(ndx);
 
      //console.log(causeData);
      dc.renderAll();
@@ -163,4 +164,42 @@ function wend_alco(ndx) {
         .elasticY(true)
         .xAxisLabel("Students that Drink During Weekends")
         .yAxis().ticks(20);
+}
+
+//Grade Scatterplot Graph
+function show_grades(ndx) {
+    
+    var genderColor = d3.scale.ordinal()
+        .domain(["F", "M"])
+        .range(["pink", "cadetblue"]);
+    
+    var eDim = ndx.dimension(dc.pluck("G3"));
+    var gradeDim = ndx.dimension(function(d) {
+       return [d.G1, d.G2, d.G3, d.sex];
+    });
+    
+    var gradeGroup = gradeDim.group();
+    var minGrade = eDim.bottom(1)[0].G3;
+    var maxGrade = eDim.top(1)[0].G3;
+      
+    dc.scatterPlot("#gscat")
+        .width(800)
+        .height(500)
+        .x(d3.scale.linear().domain([minGrade, maxGrade]))
+        .y(d3.scale.linear().domain([0,20]))
+        .brushOn(false)
+        .symbolSize(8)
+        .clipPadding(15)
+        .xAxisLabel("Starting Grade of Student, Scored out of 20.")
+        .yAxisLabel("Finishing Grade of Student, Scored out of 20")
+        .title(function(d) {
+         return "Started the year with " + d.key[0] + " Halfway through was at " + d.key[1] + " and Finished with " + d.key[2];
+        })
+        .colorAccessor(function (d) {
+          return d.key[3];
+        })
+        .colors(genderColor)
+        .dimension(gradeDim)
+        .group(gradeGroup)
+        .margins({top: 10, right: 40, bottom: 50, left: 50});
 }
