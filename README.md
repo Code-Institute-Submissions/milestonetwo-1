@@ -1,6 +1,6 @@
 # Data Dashboard Milestone Two Project
 
-This Interactive Data Dashboard shows Consumption of Alcohol for Secondary School Math Students its includes a range of graphs that show different statistics based on the data provided.  
+This Interactive Data Dashboard shows Consumption of Alcohol for Secondary School Math Students it includes a range of graphs that show different statistics based on the data provided.  
 
 Click here to View: https://jsnbly.github.io/milestonetwo/
  
@@ -63,7 +63,7 @@ favicon.io - Favicon Creation.
 
 To Test this Project locally I used Fenix webserver installed on my development Machine this would allow me to run the javascript required and test locally.    
 
-I used Developer tools to Console.log data to the Chrome Console for debugging data as I was building graphs this allowed to change data in the DOM. I also used the device toolbar to view across devices even though D3 and DC dose not render responsive graphs and the site was designed to be viewed purely on large screen devices.    
+I used Developer tools to Console.log data to the Chrome Console for debugging data as I was building graphs. I also used the device toolbar to view across different devices even though D3 and DC dose not render responsive graphs and the site was designed to be viewed purely on large screen devices.    
 
 I selected a range of different values across the graphs on the dashboard to check that all graphs were redendering correctly and also updating as required.   
 
@@ -71,7 +71,7 @@ I tested my code with W3C Markup and CSS Validator to Check compliance.
 
 ## Deployment
 
-I have used Github for Version Control and Github Pages for Deployment.  
+I have used Git and Github for Version Control and Github Pages for Deployment and Hosting.  
 
 I used Linux Terminal to push the project to Github and from repository settings enabled github pages.  
 
