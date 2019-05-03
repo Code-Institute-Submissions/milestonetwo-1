@@ -12,9 +12,10 @@ The Dashboard is designed to be easy to view with great Typography and Consistan
 
 It was designed to allow the user to quickly get results for questions asked of the data.  
 
-Wireframe Image -  ../blob/master/uxd/wireframemile2.jpg  
+Wireframe Image -  .https://github.com/jsnbly/milestonetwo/blob/master/uxd/wireframemile2.jpg   
 
-UDX documentation is Available in UDX Folder ../blob/master/uxd  
+UXD documentation is Available in UXD Folder  
+https://github.com/jsnbly/milestonetwo/tree/master/uxd   
 
 
 ## Features
