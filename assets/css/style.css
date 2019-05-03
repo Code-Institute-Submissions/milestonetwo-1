@@ -1,0 +1,42 @@
+/* Padding for Graphs*/
+#bargraphs{
+    padding-top: 25px;
+}
+
+#pie-charts{
+    padding-top: 50px;
+}
+
+#alcbarcharts{
+    padding-top: 50px;
+}
+
+#gradescat{
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+
+
+/*Font awesome sizing*/ 
+.iconsize{
+    font-size: 30px;
+    padding: 5px;
+}
+
+.pie{
+    padding-left: 37px;
+}
+
+.pie-p{
+    padding-bottom: 25px;
+}
+
+.alcheader{
+    padding-bottom: 10px;
+}
+
+.footer{
+    text-align: center;
+    color: antiquewhite;
+    background-color: orangered;
