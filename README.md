@@ -1,6 +1,6 @@
 # Data Dashboard Milestone Two Project
 
-This Data Dashboard shows Consumption of Alcohol for Secondary School Math Students its includes a range of graphs that show different statistics based on the data provided.  
+This Interactive Data Dashboard shows Consumption of Alcohol for Secondary School Math Students its includes a range of graphs that show different statistics based on the data provided.  
 
 Click here to View: https://jsnbly.github.io/milestonetwo/
  
@@ -14,7 +14,7 @@ It was designed to allow the user to quickly get results for questions asked of 
 
 Wireframe Image -  .https://github.com/jsnbly/milestonetwo/blob/master/uxd/wireframemile2.jpg   
 
-UXD documentation is Available in UXD Folder  
+Further UXD documentation is Available in UXD Folder  
 https://github.com/jsnbly/milestonetwo/tree/master/uxd   
 
 
@@ -49,7 +49,7 @@ HTML/CSS - Used for Front end Development and design.
 D3/DC/Crossfilter - Used to draw Graphs to index.html 
 queue.js - Used to Parse the csv file  
 javascript - Used to develop wgraph.js file   
-Bootstrap/Bootswatch - Used for Page Typography and Colour Scheme.  
+Bootstrap/Bootswatch - Used United from Bootswatch for Page Typography and Colour Scheme.  
 VSCode - IDE Used for Development  
 Git - Used for Version Control  
 Github - Used for Deployment/Hosting  
