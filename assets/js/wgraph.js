@@ -10,6 +10,9 @@ function makeGraphs(error, causeData) {
     gender(ndx);
     age(ndx);
     loc_student(ndx);
+    gender_activites(ndx);
+    family_support(ndx);
+    school_support(ndx);
 
      //console.log(causeData);
      dc.renderAll();
@@ -80,4 +83,43 @@ function loc_student(ndx) {
         .elasticY(true)
         .xAxisLabel(" Location of Student either Rural or Urban")
         .yAxis().ticks(20);
+}
+
+//Piechart showing After school activities
+function gender_activites(ndx){
+    var dim = ndx.dimension(dc.pluck('activities'));
+    var group = dim.group();
+
+    dc.pieChart('#activities')
+        .height(330)
+        .radius(250)
+        .transitionDuration(1500)
+        .dimension(dim)
+        .group(group);
+}
+
+//Piechart showing if student gets Family Support
+function family_support(ndx){
+    var dim = ndx.dimension(dc.pluck('famsup'));
+    var group = dim.group();
+
+    dc.pieChart('#family_support')
+        .height(330)
+        .radius(250)
+        .transitionDuration(1500)
+        .dimension(dim)
+        .group(group);
+}
+
+//Piechart showing if the student gets Support from school
+function school_support(ndx){
+    var dim = ndx.dimension(dc.pluck('schoolsup'));
+    var group = dim.group();
+
+    dc.pieChart('#school_support')
+        .height(330)
+        .radius(250)
+        .transitionDuration(1500)
+        .dimension(dim)
+        .group(group);
 }
