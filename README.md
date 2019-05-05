@@ -17,6 +17,15 @@ Wireframe Image -  .https://github.com/jsnbly/milestonetwo/blob/master/uxd/wiref
 Further UXD documentation is Available in UXD Folder  
 https://github.com/jsnbly/milestonetwo/tree/master/uxd   
 
+## User Stories
+- A user wants to know how many Male students in the class partake in Afterschool Activities  
+User Clicks on Male student M on Gender Bargraph and the Afterschool Pie Chart will show result when Yes is hovered over with mouse
+
+- A user wants to see overview of Alcohol usage for Female students over weekday and weekends
+User clicks on Female student and the Alcohol Consumption Bargraphs will Show overview to user.
+
+- A user wants to see results for students from a Specific school over their Academic year.  
+User uses the selector to choose between schools and this will render the chosen data in the scatterplot.
 
 ## Features
 
@@ -60,6 +69,8 @@ Google Office - For UDX Documentation.
 favicon.io - Favicon Creation.        
 
 ## Testing
+I used console.log() in my javascript file to test fuctions in Developer Tools to help debug, an example of this was to check minGrade  
+and maxGrade in the show_grades function as the data was not rendering correctly in the scatterplot it would only show a max grade of 9 this helped me to realise the data was rendering as a string and when this was parsed as an int by adding parseInt to fuction(d) as it plucked from the G3 column in the CSV the data loaded correctly in the scatterplot. 
 
 To Test this Project locally I used Fenix webserver installed on my development Machine this would allow me to run the javascript required and test locally.    
 

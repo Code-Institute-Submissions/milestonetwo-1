@@ -1,3 +1,7 @@
+/* Site Styling*/
+#mcontainer{
+    width: 1345px;
+}
 /* Padding for Graphs*/
 #bargraphs{
     padding-top: 25px;
@@ -16,6 +20,13 @@
     padding-bottom: 25px;
 }
 
+#outcomes{
+    padding-bottom: 20px;
+    background-color: lightgrey;
+    border-radius: 25px;
+    border: 1px solid black;
+    padding: 10px;
+}
 
 
 /*Font awesome sizing*/ 
@@ -40,4 +51,5 @@
     text-align: center;
     color: antiquewhite;
     background-color: orangered;
+    margin-top: 50px;
 }
