@@ -21,72 +21,92 @@
 </head>
 <body>
 
+<div class="container" id="mcontainer">
+
+    <!--Bootswatch Navbar with title -->
     <nav class="navbar navbar-default">
         <div class="container-fluid">
-            <div class="navbar-header">
+          <div class="navbar-header">
             <a class="navbar-brand" href="#">Consumption of Alcohol for Secondary School Math Students</a>
-            </div>
+          </div>
         </div>
     </nav>
-
+    
+    <!--Heading text and Data Selector-->
     <section class="container-fluid text-center" id="selector">
         <div class="row">
             <h4>Study of Alcohol use among Secondary School Math Students from two different Secondary Schools and its effect.</h4>
             <p><i class="fas fa-school iconsize"></i>  You can select between Gabriel Pereira(GP) and Mousinho da Silveira(MS) or both Schools.</p>
-            </div>
-        <div class="row col-xs-12 col-md-12" id="make-selector"></div>
+        </div>
+        <div class="col-md-12" id="make-selector"></div>
     </section>
 
+    <!--Bargraphs Showing Demographics-->
     <section class="container-fluid text-center" id="bargraphs">
         <div class="row">
             <div class="pie-p"><h4><i class="fas fa-male iconsize"></i><i class="fas fa-female iconsize"></i>Student Demographic</h4></div>
-            <div class="col-xs-12 col-md-4" id="sex"></div>
-            <div class="col-xs-12 col-md-4" id="age"></div>
-            <div class="col-xs-12 col-md-4" id="location"></div>
+            <div class="col-md-4" id="sex"></div>
+            <div class="col-md-4" id="age"></div>
+            <div class="col-md-4" id="location"></div>
         </div>
     </section>
 
+    <!--Piecharts showing extra Student information-->
     <section class="container-fluid text-center" id="pie-charts">
         <div class="row">
-            <div class="col-xs-12 col-md-4">
+            <div class="col-md-4">
                 <div class="pie-p"><p><i class="fas fa-chess-king iconsize"></i>Dose Student attend after School Activities</p></div>
                 <div class="pie" id="activities"></div>
             </div>
-    
-            <div class="col-xs-12 col-md-4">
+
+            <div class="col-md-4">
                 <div class="pie-p"><p><i class="fas fa-home iconsize"></i> Dose Student have extra Support from their Family</p></div>
                 <div class="pie" id="family_support"></div>
             </div>
-                
-            <div class="col-xs-12 col-md-4">
+            
+            <div class="col-md-4">
                 <div class="pie-p"><p><i class="fas fa-school iconsize"></i>Dose Students have extra Support from their School</p></div>
                 <div class="pie" id="school_support"></div>
             </div>
         </div>
     </section>
 
+    <!--Barcharts showing Student Alcohol Consumption daily and over weekend-->
     <section class="container-fluid text-center" id="alcbarcharts">
         <div class="row">
-            <div id="alcheader"><h4><i class="fas fa-cocktail iconsize"></i>Alcohol Consumption of the Students: 1 is Very Low Consumption and 5 is Very High Consumption</h4></div>
-                <div class="col-xs-12 col-md-6" >
-                <div id="dailyalc"></div>
-            </div>
-    
-            <div class="col-xs-12 col-md-6">
+             <div id="alcheader"><h4><i class="fas fa-cocktail iconsize"></i>Alcohol Consumption of the Students: 1 is Very Low Consumption and 5 is Very High Consumption</h4></div>
+                <div class="col-md-6" >
+                    <div id="dailyalc"></div>
+                </div>
+
+            <div class="col-md-6">
                 <div id="wendalc"></div>
             </div>
         </div>
     </section>
 
+    <!--Scatter Plot showing Student Grades-->
     <section class="container-fluid text-center" id="gradescat">
         <div class="row">
-            <div class="col-xs-12 col-md-12" id="gradeheader"><h4><i class="fas fa-graduation-cap iconsize"></i>Student Starting and Finishing Grades</h4></div>
-            <div class="col-xs-12 col-md-12" id="gscat"></div>
+            <div class="col-md-12" id="gradeheader"><h4><i class="fas fa-graduation-cap iconsize"></i>Student Starting and Finishing Grades</h4></div>
+                <div class="col-md-12" id="gscat"></div>
+        </div>
+    </section>
+    
+    <!--Outcome Statements-->
+    <section class="container-fluid text-center" id="outcomes">
+        <div class="row">
+            <h4><i class="fas fa-lightbulb iconsize"></i>Examples of findings from the Data</h4>
+            <p><i class="fas fa-male iconsize"></i>The 82 Male Students that do not take part in After School Activities Drink more than those that do take part in some form of after School Activity.</p>
+            <p><i class="fas fa-female iconsize"></i>58 Female Students Aged 17 Drink less excessively than their 40 Male Counterparts and mainly at the Weekend. </p>
+            <p><i class="fas fa-globe-europe iconsize"></i>The 88 Students in Rural Areas drink less than those based in Urban Areas.</p>
         </div>
     </section>
 
+   <!--Site Footer-->
     <footer>
         <div class="footer">© 2018 Copyright: jaybailey(at)outlook.com </div>
-    </footer>   
+    </footer>
+</div>
 </body>
 </html>
