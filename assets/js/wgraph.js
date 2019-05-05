@@ -1,10 +1,14 @@
 queue()
     .defer(d3.csv, "assets/data/student.csv")
     .await(makeGraphs);
-
+ 
 //Draw Graph Fuction    
 function makeGraphs(error, causeData) {
     var ndx = crossfilter(causeData);
+    
+    causeData.forEach(function(d){
+        d.G3 = parseInt(d["G3"]);
+    })
 
     causeselect(ndx);
     gender(ndx);
@@ -16,9 +20,11 @@ function makeGraphs(error, causeData) {
     daily_alco(ndx);
     wend_alco(ndx);
     show_grades(ndx);
+   
+    // Test Data loading
+    // console.log(causeData);
 
-     //console.log(causeData);
-     dc.renderAll();
+    dc.renderAll();
 }
 
 //Drop down selector for selection of school
@@ -49,6 +55,7 @@ function gender(ndx) {
         .xAxisLabel("Female or Male Students")
         .yAxis().ticks(20);
 }
+
 
 //Student Age Barchart
 function age(ndx) {
@@ -101,7 +108,7 @@ function gender_activites(ndx){
         .group(group);
 }
 
-//Piechart showing if student gets Family Support
+//piechart showing if student gets Family Support
 function family_support(ndx){
     var dim = ndx.dimension(dc.pluck('famsup'));
     var group = dim.group();
@@ -181,7 +188,11 @@ function show_grades(ndx) {
     var gradeGroup = gradeDim.group();
     var minGrade = eDim.bottom(1)[0].G3;
     var maxGrade = eDim.top(1)[0].G3;
-      
+    
+    //Test Data output for Scatterplot
+    //console.log(minGrade);
+    //console.log(maxGrade);
+    
     dc.scatterPlot("#gscat")
         .width(800)
         .height(500)
@@ -191,7 +202,7 @@ function show_grades(ndx) {
         .symbolSize(8)
         .clipPadding(15)
         .xAxisLabel("Starting Grade of Student, Scored out of 20.")
-        .yAxisLabel("Finishing Grade of Student, Scored out of 20")
+        .yAxisLabel("Final Grade of Student, Scored out of 20")
         .title(function(d) {
          return "Started the year with " + d.key[0] + " Halfway through was at " + d.key[1] + " and Finished with " + d.key[2];
         })
