@@ -35,7 +35,7 @@ Demographic Bargraphs - Shows Gender, Age and also the Location of Student eithe
 PieCharts - Show if the Student takes part in Afterschool Activites and also if they receive extra support from Their Family or School    
 Alcohol Barcharts - Show if the Students Consumes Alcohol on Weekdays and also if the Students Consume Alcohol on Weekends  
 Scatterplot -  Shows the Students First, Second and Third Term Grades over the Year in Class  
-Examples - Shows examples of results returned from using the data dashboard
+Examples - Shows examples of results returned from using the data dashboard  
 Footer - Shows Copyright information  
  
 ### Existing Features
@@ -71,7 +71,7 @@ favicon.io - Favicon Creation.
 
 ## Testing
 
-Used console.log() in my javascript file to test fuctions in Developer Tools to help debug, an example of this was to check minGrade  
+Used console.log() in my javascript file to test fuctions in Developer Tools to help debug, an example of this was to check minGrade
 and maxGrade in the show_grades function as the data was not rendering correctly in the scatterplot it would only show a max grade of 9 this helped me to realise the data was rendering as a string and when this was parsed as an int by adding parseInt to fuction(d) as it plucked from the G3 column in the CSV the data loaded correctly in the scatterplot. 
 
 To Test this Project locally I used Fenix webserver installed on my development Machine this would allow me to run the javascript required and test locally.    
